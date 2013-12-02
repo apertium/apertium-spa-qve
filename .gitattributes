@@ -6,6 +6,7 @@
 /Makefile -text
 /README -text
 /apertium-spa-qve.post-spa.dix -text
+/apertium-spa-qve.qve-spa.lrx -text
 /apertium-spa-qve.qve-spa.rlx -text
 /apertium-spa-qve.qve-spa.t1x -text
 /apertium-spa-qve.qve-spa.t2x -text

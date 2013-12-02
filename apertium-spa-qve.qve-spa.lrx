@@ -1,0 +1,54 @@
+<!-- no funciona si el lema en LF es ambiguo (por ej. sin diferenciar tv-iv-vcm) -->
+
+<rules>
+  <rule>
+    <match lemma="runa"><select lemma="gente"/></match>
+  </rule>
+  
+  <rule> <!-- borrar después de poner una regla en la CG - - YA!! -->
+    <match lemma="pi" tags="prn.itg.nom"><remove lemma="qué"/></match>
+    <match lemma="*" tags="vblex.*" />
+  </rule>
+ 
+  <rule>
+    <match lemma="qhiswa"><select lemma="quechua"/></match>
+    <match lemma="rimay"/>
+  </rule>
+ 
+  <rule>
+    <match lemma="niy" tags="vblex.vcm.ger"/>
+    <match lemma="kutichiy" tags="vblex.vcm.*">
+      <remove lemma="devolver" tags="vblex.*"/></match>
+  </rule>
+  
+  <rule>
+    <match lemma="simi" tags="n.*"><select lemma="lengua" tags="n.f.*"/></match>
+  </rule>
+  
+  <rule>
+    <match lemma="aka"><select lemma="mierda"/></match>
+  </rule>
+  
+</rules>
+
+<!-- 
+
+<rule>
+  <match  lemma="rikuy"  tags="vblex.tv.caus.*"/>
+       <select  lemma="show"/>
+  </match>
+</rule>
+
+algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
+adv = ^ + cha, lla (!= vše kromě: cha, lla, -niq, -pi, -man, -nta, -kama; -manta, -ta)
+adv: sólo con (cha)(lla) + (niq) + loc, term, dat, acc, abl, per
+adv.temp también chay+indep(/or)
+pref adv sobre prn: loc, term, dat, per
+chayta: prn/adv
+chaymanta: de ahí, sobre eso
+
+match lemma "aswanpas" - select "a pesar de que" - si sigue vblex/aux + ger, ger1 (???)
+prn "as" + lla - select "un poco"
+prn "as" + wan - select "más" - CG
+
+-->

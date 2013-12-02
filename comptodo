@@ -65,3 +65,8 @@ apertium-validate-interchunk apertium-spa-qve.qve-spa.t2x
 apertium-preprocess-transfer apertium-spa-qve.qve-spa.t2x qve-spa.t2x.bin
 apertium-validate-postchunk apertium-spa-qve.qve-spa.t3x
 apertium-preprocess-transfer apertium-spa-qve.qve-spa.t3x qve-spa.t3x.bin 
+
+lrx-comp apertium-spa-qve.qve-spa.lrx qve-spa.autolex.bin
+
+apertium-gen-modes modes.xml
+cp *.mode modes/

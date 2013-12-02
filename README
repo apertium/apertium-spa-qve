@@ -3,7 +3,7 @@
 
                         ESPAÑOL - QUECHUA DEL ESTE DE APURÍMAC
     
-                                     apertium-es-qve
+                                     apertium-spa-qve
 
 ===============================================================================
 
@@ -42,13 +42,13 @@ Testing
 ===============================================================================
 Traduciendo de Español a Quechua
 
-$  echo "Jaime está comiendo" | apertium -d . es-qve
+$  echo "Jaime está comiendo" | apertium -d . spa-qve
 salida: Ñuqanchis Mikhuyku
 
 
 Traduciendo de Quechua a Español
 
-  $  echo "yuraq wasiyki" | apertium qve-es
+  $  echo "yuraq wasiyki" | apertium qve-spa
 salida: Tu casa blanca
 
 
