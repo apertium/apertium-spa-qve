@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- -*- nxml -*- -->
+<!--hhkkkkkkkkkkkkkkkkkh -->
+<postchunk>
+  
+  <section-def-cats>
+    
+    <def-cat n="sent">
+      <cat-item name="punt"/>
+    </def-cat>
+    
+    <def-cat n="verbo-partp">
+      <cat-item name="verbo-pp"/>
+    </def-cat>
+    
+  </section-def-cats>
+  
+  <section-def-attrs>
+    
+    <def-attr n="gen">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="GD"/>
+    </def-attr>
+    
+    <def-attr n="nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+    
+    <def-attr n="cas">    <!-- + combinaciones con el genitivo y otras -->
+      <attr-item tags="incl"/>
+      <attr-item tags="inter"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="nom"/>
+      <attr-item tags="per"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="ben"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="loc"/>
+      <attr-item tags="ins"/>
+      <attr-item tags="ter"/>
+      <attr-item tags="csal"/>
+      <attr-item tags="dis"/>
+    </def-attr>
+    
+  </section-def-attrs>
+  
+  <section-def-vars>
+    <def-var n="paraula"/>
+    <def-var n="prepos"/>
+    <def-var n="POST"/>
+  </section-def-vars>
+  
+<section-def-macros>
+  
+    <def-macro n="test1" npar="1">
+      <let>
+        <var n="POST"/>
+        <lit v=""/>
+      </let>
+    </def-macro>
+  
+  
+<def-macro n="caso-pr" npar="1">
+<let><var n="prepos"/><lit v=""/></let>
+<choose><when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="abl"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="de"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="loc"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="en"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="ter"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="hasta"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="dat"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="a"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="per"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="por"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="csal"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="por"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="ben"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="para"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="ins"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="con"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="incl"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="con"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="gen"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="de"/></let>
+</when>
+<when>
+    <test><equal>
+        <clip pos="1" part="cas"/><lit-tag v="acc"/>
+    </equal></test>
+    <let><var n="prepos"/><lit v="a"/></let>
+</when>
+</choose>
+
+<choose>
+<when>
+  <test><not><equal>
+    <var n="prepos"/><lit v=""/>
+  </equal></not></test>
+  <let>
+    <var n="prepos"/>
+    <concat>
+      <lit v="^prep"/>
+      <lit-tag v="SP"/>
+      <lit-tag v="pr"/>
+      <lit v="{^"/>
+      <var n="prepos"/>
+      <lit-tag v="pr"/>
+      <lit v="$}$ "/>
+    </concat>
+   </let> 
+</when>
+<otherwise>
+  <let><var n="prepos"/><lit v=""/></let>
+</otherwise>
+</choose>
+</def-macro>
+  
+<def-macro n="quita-GD-ND" npar="1"> <!-- sólo sustituye GD y ND -->
+<choose>
+  <when>
+    <test>
+      <equal>
+        <clip pos="1" part="gen"/>
+        <lit-tag v="GD"/>
+      </equal>
+    </test>
+      <let>
+        <clip pos="1" part="gen"/>
+        <lit-tag v="m"/>
+      </let>
+    </when>
+</choose>
+<choose>
+  <when>
+    <test>
+      <equal>
+        <clip pos="1" part="nbr"/>
+        <lit-tag v="ND"/>
+        </equal>
+      </test>
+      <let>
+        <clip pos="1" part="nbr"/>
+        <lit-tag v="sg"/>
+      </let>
+    </when>
+</choose>
+</def-macro>
+
+</section-def-macros>
+  
+  <section-rules>
+    
+    <rule comment="CHUNK:">
+      <pattern>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    
+    <rule comment="CHUNK: SV-pp">
+      <pattern>
+        <pattern-item n="verbo-partp"/>
+      </pattern>
+      <action>
+        <call-macro n="quita-GD-ND">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    
+  </section-rules>
+</postchunk>

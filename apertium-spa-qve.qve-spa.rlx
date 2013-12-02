@@ -1,0 +1,316 @@
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
+SOFT-DELIMITERS = "<,>" ;
+
+SETS
+
+LIST N = n ; 
+LIST A = adj ;
+LIST Post = post ;
+LIST Prop = (np ant) ; 
+LIST Vmov = vm ;
+LIST V = vblex ;
+LIST Num = num ;    # posiblemente (num nom) o num.ord, num.px3sg/pl
+LIST Itg = (prn itg) (adv itg) ;    # sin determinantes
+
+LIST Gen = gen ;    # -q/pa
+LIST Acc = acc ;    # -ta
+LIST Per = per ;    # -nta
+LIST P3acc = (px3sg acc) ;      # -n-ta
+LIST Inf = inf ;        # -y
+LIST N-Acc = (n acc) ;
+LIST Caso = acc gen ben dat ter per abl loc ins csal dis prox posic ;   # sin nominativo
+LIST POS = px1sg px2sg px3sg px1in px1ex px2pl px3pl ;
+
+LIST Pers3 = (p3 sg) (p3 pl) ;
+LIST TM = fti past evid imp pri cni hab ;
+LIST Nomin = inf ag pp pf ;     # nominalizadores -y, -q, -sqa, -na
+LIST SubAdv = ger ger2 ger_sd cons ;
+LIST Trans =  caus ; # transitivizadores + ? bn, coop, rec... ?
+LIST Detrans = refl ; # detransitivizadores
+
+LIST Clit-NoImp = dfnt contr topi rnd af rep cnj dub ;
+#                -puni -taq -qa  -ri -mi -si -chá -chus
+# clíticos no usados con el imperativo - pero ???  cnti dcnt adit (raq ña pas), contr (taq) ?? dfnt (puni)?
+
+
+LIST Clit = contr topi rnd qst af rep cnj dub enf ; # clíticos oracionales (sin los independientes)
+#          -taq   -qa -ri -chu -mi -si -chá -chus -ya
+
+
+LIST Anim = "irqi"i "wawa"i "wamra"i "warma"i "willka"i 
+        "tayta-mama"i "mama-tayta"i "qhari-warmi"i "warmi-qhari"i 
+        "pana-tura"i "wayqi-pana"i "ñaña-tura"i "runa"i
+        (n m) (n f) (np ant) ;
+## animados
+
+SET NumDet = Num + (nom) - Clit - Caso ;
+SET NominN = Nomin - (wa) ;    # también -su.. cuando no puede ser verbo subordinado
+SET VFin = V + TM ;
+SET VSub = V - TM ; # = V - TM
+SET POSsin3 = POS - (px3sg) ;
+
+BEFORE-SECTIONS
+# SELECCIÓN DE LEMAS
+  # pero: tukuy N --> det, prn (no adj o N-px1sg)
+REMOVE ("tuku"i) IF (0 ("tukuy"i)) ;  # desbuhando
+SELECT ("tukuy"i det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
+REMOVE ("aswa"i) IF (0 ("aswan"i)) ;
+SELECT ("sinchi"i adj) IF (0 (nom) LINK 1 Anim) ;
+SELECT ("kutichiy"i vcm) IF (NOT 0 (bn) LINK -1 ("niy"i ger)) ;
+SELECT ("uran"i post) IF (0 ("ura"i n) LINK -1 N) ;
+SELECT ("huklla"i adj) IF (0 ("huk"i lim) LINK 1 N) ;
+SELECT ("huklla"i adj) IF (0 ("huk"i lim) LINK 1 A LINK 1 N) ;
+SELECT ("sapa"i adj) IF (0 (lim) LINK NOT 0 POSsin3 );
+SELECT ("wakilla" adv) IF (0 (nom) LINK NOT 1 N) ;
+SELECT ("wakpi"i adv) IF (0 ("wak"i loc)) ;
+SELECT ("wakmanta"i adv) IF (0 ("wak"i abl)) ;
+SELECT ("hukmanta"i adv) IF (0 ("huk"i abl)) ;
+SELECT ("musuqmanta"i adv) IF (0 ("musuq"i abl)) ;
+SELECT ("usqhaylla"i adv) IF (0 ("usqhay"i inf lim)) ;
+REMOVE ("riy"i refl) IF  (0 ("rikuy"i)) ;
+    ## para seleccionar riku-y "ver" en vez de ri-ku-y "ir" + "refl" (pero: ri....chi- ???)
+SELECT ("hayk'aq"i adv) IF (0 ("hayk'a"i gen)) ;
+
+SELECT ("ima"i cnjcoo) IF (-1 N LINK -1 N) ;
+SELECT ("ima"i cnjcoo) IF (-1 Post LINK -1 N LINK -1 Post LINK -1 N) ;
+SELECT ("ima"i cnjcoo) IF (-1 N LINK -1 A LINK -1 N LINK -1 A) ;
+# etc.; tv.: -1 X LINK -1* &&SAMEX BARRIER no-Verb OR no-Subst según X
+# if 0 NOT Case LINK -1 N LINK -1 N
+
+# chaymi (antes de select prn/det.dem)
+# SELECT ("chaymi"i) IF (-1 (<<<) LINK 1C* V BARRIER ("<,>")) ; - no funciona <<<
+SELECT ("chaymi"i) IF (1C* V BARRIER ("<,>")) ; # primera palabra o desp. de <,>  LINK NOT 0 Pers3 ???
+# chaymi "por eso": selec si no sige verbo en 3sg/pl
+# - al prinicpio, desp. de comilla o espacio
+# "eso, ese" = sujeto, objeto, pred. nominal
+# ??? X qhawashan = "ese"/"por" eso mira :-( 
+
+# ITG/IND/NEG - pronombres y adverbios
+# - poner algunos aquí??
+
+
+
+SECTION
+
+SELECT A IF (-1 A) (1C N);
+    # Jaimeqa usqhaylla phawashan hatun machu sach'aman, Maríamantan pakakushan.
+
+SELECT Per IF (0 P3acc LINK 0 ("qhawana"i n) OR ("t'uqu"i) LINK 0C* ("rikuy"i vblex) OR ("qhaway"i vblex)) ;
+REMOVE Per IF (0 P3acc LINK NOT 0 ("qhawana"i n) OR ("t'uqu"i) LINK NOT -1* Vmov BARRIER V OR (cm))
+              (0 P3acc LINK NOT 0 ("qhawana"i n) OR ("t'uqu"i) LINK NOT 1* Vmov BARRIER V OR (cm)) ;
+		# Mamanta rikun. Achhuykuspan, mamaykita qhawananta rikun.		
+REMOVE Per IF (0 Anim LINK 0 P3acc) ;
+# es más probable un movimiento hacia una persona que por una persona (aunque: la lanza pasó por...)
+# + AFTER-SECTIONS
+
+REMOVE (px3sg) IF (0 (xrel) LINK 0 (numM) LINK -1 (numM)) ;
+REMOVE (px3sg) IF (0 (xrel) LINK 0 (numM) LINK -1 (num) LINK -1 (numM)) ;
+# chunkan, pachaknin, waranqan? - 110, 1010, 1100, 1040, 140, 1400, 1444000...
+# pero mejor seleccionar xrel siempre que anteceda un multiplicador mayor
+# (hay ambigüedad también con el afirmativo)
+
+
+SELECT Inf IF (0 N-Acc LINK *0 V) ;
+# ( N | INF ) Acc + vblex tv --> INF
+
+# IMPERATIVO | INF + NOM
+REMOVE (imp) IF (0 Clit-NoImp) ;
+REMOVE (imp) IF (1* ("<?>")) ;
+REMOVE (imp) IF (0* ("mana"i) LINK 0 Clit) ; # + puni dfnt ? (excluir neg. de palabra, subord)
+SELECT (imp) IF (-1* ("ama"i)) (0 (qst)) ; # BARRIER (imp) ???
+SELECT (imp) IF (0 (enf)) ;
+SELECT (imp) IF (1 ("<!>")) ;
+# select (imp) si es la única palabra en la oración
+# select imp if not 0* (mi/si/chá/chu..?) y hay por lo menos n palabras ???
+
+# -SQA
+# select evid if -1* af.excl not 0C* VFin
+
+
+
+
+SELECT A IF (0 N LINK 0 (nom) LINK 1C N) ;
+  # wira runa - "hombre gordo", y no "hombre de grasa"
+  
+SELECT N IF (0 A LINK 0 Caso) ;
+  # warmita "mujer", no "hembra"
+
+
+# DEMOSTRATIVOS: pronombres - determinantes - adverbios
+REMOVE (adv subst dem) IF (0 (det dem)) ;       # los adverbios de este tipo siempre llevan caso
+SELECT (det dem) IF (0 (prn dem) LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 A LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 A LINK 1 A LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 A LINK 1 ("<,>") LINK 1 A LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
+SELECT (prn dem) IF (0 (acc) LINK 1* (vblex tv)) ;
+# SELECT (adv subst dem) IF (0 (det dem) OR (prn dem)) ; # LINK 0 Clit) ; # con algunos casos sólo
+# + numerales compuestos
+
+
+
+# ITG/IND/NEG - pronombres y adverbios
+REMOVE Itg IF (0 Itg + (adit)) ; # imapas no es itg, imaraq tampoco?
+REMOVE (det itg) IF (0 (det neg) LINK 1* (n adit) BARRIER N OR Clit) ;
+REMOVE (det ind) IF (0 (det itg) LINK NOT 1* (n adit) BARRIER N OR Clit) ;
+REMOVE (det neg) IF (0 (det itg) LINK NOT 1* (n adit) BARRIER N OR Clit) ;
+REMOVE (prn ind) IF (NOT 0 (adit)) ;
+REMOVE (prn neg) IF (NOT 0 (adit)) ;
+SELECT Itg IF (0 Clit OR (cnti) ) ; # + raq, -ña ?, -lla?, -puni
+# pero: piraq mayraq?, talvez piraq = ind = alguien
+REMOVE (det) IF (1 (sent)) ;
+# REMOVE (det) IF (NOT 1 N OR A OR (prn) OR (num) OR NumM OR (np) OR (det) OR VSub OR (preadj)) ;
+SELECT (det itg) IF (0 (det neg) LINK 1* N + Clit BARRIER N OR Clit LINK NOT 0 (adit)) ;
+SELECT (ind) IF (0 (neg) LINK NOT -1* ("mana"i) BARRIER Clit OR V) ;
+SELECT (ind) IF (0 (neg) LINK -1* ("mana"i qst) BARRIER Clit) ; # manachu pipas hamun? no vino alguien?
+SELECT (neg) IF (0 (ind) LINK -1* ("mana"i) - (qst) BARRIER N OR V LINK 1* (qst) CBARRIER VFin) ;
+SELECT (det) IF (0 (prn ind) OR (prn neg) LINK 1* (n adit) BARRIER N OR Clit) ;
+SELECT (det) IF (0 (adv ind) OR (adv neg) LINK 1* (n adit) BARRIER N OR Clit) ;
+SELECT (neg) IF (-1* ("mana"i) LINK NOT 0 (qst) LINK 1*x VSub BARRIER VFin LINK NOT 1*x (qst)) ;
+# revisar porque sale mal para subordinaciones:
+# Manan yachanichu pi hamusqanta. Manan pi hamusqanta yachanichu.
+# Manachu pi hamusqanta yachanki? Pi hamusqanta yachankichu?
+# Manan yachanichu pi runa hamusqanta. Manan pi runa hamusqanta yachanichu.
+# Manachu pi runa hamusqanta yachanki? Pi runa hamusqanta yachankichu?
+# + poner también ("ni"i)
+
+# remove neg if -1* ("mana"i Clit) BARRIER ("mana"i) LINK self 1* Vsubordinado OR Clit)
+# select prn.itg - pin hamun?
+# select prn.itg if Clit + (raq)
+# + mana(n) pipas, sin verbo (>>>)
+
+# SELECT (det neg) IF (-1 ("<mana>"i) ; # - ojo, en las subordinaciones...
+# mana < neg/ind > -chu = neg
+# mana < neg/ind > !-chu = ind - pero: chay mana allin runari, imatapas saqinchu?
+
+
+# DETERMINANTES INTERROGATIVOS VS. pronombres y adverbios interrogativos (indef/neg ?)
+SELECT (det itg) IF (0 Itg LINK 1 N) ;
+SELECT (det itg) IF (0 Itg LINK 1 A LINK 1 N) ;
+SELECT (det itg) IF (0 Itg LINK 1 A LINK 1 A LINK 1 N) ;
+SELECT (det itg) IF (0 Itg LINK 1 A LINK 1 ("<,>") LINK 1 A LINK 1 N) ;
+SELECT (det itg) IF (0 Itg LINK 1 (preadj) LINK 1 A LINK 1 N) ;
+# con numerales???
+# det.itg que no son prn.itg - no hace falta desambiguar
+
+
+# INDEFINIDOS: pronombres - determinantes (wakin, sapa, imapas)
+# sirve también para los prn.itg/ind/neg
+# REMOVE (prn) IF (0 (det ind) LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 N) ;                   # OK?
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 A LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 A LINK 1 ("<,>") LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
+# mejor remove, porque det sale primero, o las dos reglas
+
+
+# CUANTITATIVOS: pronombres - determinantes - preadjetivos - adverbios
+# es difícil distinguir si es ADV o PRN+acc :-(
+SELECT (preadj) IF (0 (det qnt) LINK 1C A) ;
+SELECT (det qnt) IF (0 (preadj) LINK 1C N) ;
+SELECT (preadj) IF (0 ("ancha"i) LINK 1 A) ;
+SELECT (adv) IF (0 (prn) LINK NOT 0 (itg) OR (dem)) ; # LINK NOT 1* (vblex tv) - Detrans)
+REMOVE (preadj) IF (0 (det qnt) LINK NOT 0 ("ancha"i) LINK NOT 1C A) ; # ojo si se cambia en lexc para que preadj pueda llevar caso
+# REMOVE (det qnt) IF (NOT 1C N) ;  -  no quitar, si no sigue ni A ni N, mejor DET que preadj
+# algunos son también ADJ - sinchi (+ nom), manchay, waliq
+# otros verbos nominalizados - pasaq, llasaq, khuyay, tunpa(n)
+# distinguir as(lla) "poco" de as+...+wan "más" (poner as "más" como aswan?)
+# asta - prep, tukuy
+
+
+
+REMOVE (evid) IF (1* V) ;
+# revisar, talvez BARRIER ("<,>")
+
+SELECT N IF (0 (ag) LINK -1 A OR (det)) ; # -1C ?
+
+# para los nominalizadores (si existe N) select nom si va con det
+# SELECT N IF (0 Inf OR (imp) LINK -1C (det) ; # - ojo, revisar para subord, tipos de det..
+
+# select (af) if (0 (px3sg) LINK NOT *0C Clit) ;
+# o remove (af) if (0 (px3sg) LINK *0C Clit) ;
+
+AFTER-SECTIONS
+# poner las últimas cosas por desambiguar (lo más frecuente)?
+SELECT Per IF (0 ("ñan"i) LINK 0* Vmov) ; # agregar a la lista
+REMOVE Per IF (0 P3acc LINK NOT 0 ("ñan"i) LINK NOT 0* Vmov BARRIER V OR (cm)) ;
+# SELECT Per IF (0 P3acc LINK NOT 0 Anim LINK *0 Vmov BARRIER (cm) OR V - Vmov) 
+#              (0 P3acc LINK NOT 0 Anim LINK 1* P3acc OR Per BARRIER V - Vmov LINK 1* Vmov ) ;
+# chakranta rishan / rishan chakranta / chakranta, urqunta rishan
+# pero: wasinta rishan :-( mejor una lista de lo que puede ser con Per (ñanninta, X patanta (post?)...)
+# REMOVE (hab) IF (0 (ag) LINK 1C* Vfin) ;
+
+
+
+END
+
+# ---------------------------------------------------
+
+## algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
+#select (det dem) if (0 (prn dem)) ( (1 N) or (1 ADJ) (2 N) or (1 ADJ) (2 ADJ) (1 N) )
+# = select (prn dem nom)
+
+# "<asta>"i: select "asta" (no "as" (acc))
+
+
+
+
+# chay, kay, haqay - prn.dem/adv.subst.dem/(det.dem)
+# nom = prn.dem o cnjadv (chaymi) -> remove adv
+# caso no loc (man, manta, kama, pi, nta, ta?) -> remove adv
+# pero siempre puede ser prn/adv :-(
+# man, manta, kama, nta + vm -> adv (pero sacar de allí.. = de eso?)
+# pi - + kay, tiyay, puñuy.... (mucho :( )
+# manta - + vm --> adv
+# kama - + vm --> adv
+# nta - + vm = adv
+# man - + vm --> adv
+# ta - + vm --> adv, pero tb. uso adverbial
+# PERO vm sin caus !!! - desp. ambivalente !!! (-ta)
+# prn - tiene referente anafórico... pero..???
+
+# lemas por desambiguar:
+# "aswan" "aswa" select aswan
+# lluychu "venado" vs. lluy-chu "todo<qst>"
+# kay - dem, vbcop/vbes + imp/inf
+# chay-mi - chaymi
+# huk/huq(nin)
+# waki - "otros, algunos" prn/det vs. "parte" N
+# tukuy - "todo" det/prn, "entero" ADJ, "mi buho" N, "terminar" vblex
+# pasaq - det/prn, "pasar" vblex+ag (adv: + (lla) ña|pi)
+# q'ala - "todo" prn/det, "calato" ADJ
+# llasaq - prn/det/adv, "pesar" ag (llasaqta)
+# allin - preadj, "bueno" adj
+# sinchi - "fuerte" adj, "bastante" det/prn/preadj/adv
+# manchay - "terrible" preadj/adj, "espantar/tener miedo" vblex
+# aswan - "chicha" + -n, "más" prn + acc / adv
+# waliq - "valer" vblex ag, "bueno" (lla) adj, "harto" det/prn
+# tunpa(n) - "mostrar, indicar" vblex + -n..., "poco" prn/det/adv
+# khuyay - "conmoverse" vblex inf/imp (qa, mi), "demasiado" prn/det/preadj/adv
+# asta - "poco" prn + acc, "hasta" prep
+# as - aswan - "un poco" sin wan, "más" con wan, a veces ambos :-(
+# ima - "qué" prn, (+ ima sumaq preadj), "y" cnjcoo
+# pi-cha - "barrer" vblex imp/inf, "quien" prn dim/conj - + (n..) POS --> verbo
+# may-lla - "llavar", "dónde" = --^ (adv - sólo algunos casos)
+# pi - + POS mejor pini-
+# sapa - sapan: adj/prn - ambos traducen como adj "solo", det sapa > cada
+
+
+
+# NULL-SECTION
+# no se ejecuta
+
+          ## AND = LINK 0, o + (+, -, OR = sets; link = entre tests)
+          # (test) AND (test) AND (test) = (test LINK test LINK test)
+          # (test) (test) = (test) AND (test)
+          # ??? (test) OR (test) - NOT WORKING !!! (= varios tests: sel blah, sel blaj...)
+          # (tag) (tag) = (tag) OR (tag)
+          # (tag) + (tag) = (tag) AND (tag)
+          # SELECT ("<wordform>"i) + (tag) ; ( "<wordform>"i SELECT (tag) ; - no funciona)

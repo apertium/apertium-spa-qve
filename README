@@ -1,0 +1,66 @@
+
+===============================================================================
+
+                        ESPAÑOL - QUECHUA DEL ESTE DE APURÍMAC
+    
+                                     apertium-es-qve
+
+===============================================================================
+
+Estos son los datos lingüísticos de Traductor Automático Españo-Quechua
+basado en Apertium, traducción en ambas direcciones
+
+
+Requerimientos
+===============================================================================
+Previamente requiere los siguientes software especializado
+
+* lttoolbox (>= 3.2.0)
+* apertium (>= 3.2.0)
+* vislcg3 (>= 0.9.7.8188)
+* OpenFST
+* Foma
+* HFST3
+  
+Para ver los detalles de instalación se puede ver en:
+http://wiki.apertium.org/wiki/Installation
+http://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
+http://wiki.apertium.org/wiki/Hfst
+
+
+
+Compilando
+===============================================================================
+Aun falta colocar en makfile, se puede compilar los datos linguísticos 
+de la siguiente manera:
+
+$./comptodo
+
+El archivo comtodo debe tener el permiso 755
+
+Testing
+===============================================================================
+Traduciendo de Español a Quechua
+
+$  echo "Jaime está comiendo" | apertium -d . es-qve
+salida: Ñuqanchis Mikhuyku
+
+
+Traduciendo de Quechua a Español
+
+  $  echo "yuraq wasiyki" | apertium qve-es
+salida: Tu casa blanca
+
+
+Soporte
+===============================================================================
+
+Más información acerca del sistema de traductores automáticos basado en Apertium
+se puede ver en en Wiki: http://wiki.apertium.org
+
+o consultar en a la comunidad:
+
+* Mailing list: apertium-stuff@lists.sourceforge.net
+* IRC: #apertium on irc.freenode.net
+
+ver tambien el archivo de AUTHORS incluído en esta distribución para consultar acerca de este par de lenguas.

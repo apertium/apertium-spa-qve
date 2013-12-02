@@ -1,0 +1,73 @@
+!!!  Q U E C H U A . twol
+
+
+
+Alphabet
+
+A Á B C D E É F G H I Í J K L M N Ñ O Ó P Q R S T U Ú V W X Y Z
+a á b c d e é f g h i í j k l m n ñ o ó p q r s t u ú v w x y z
+
+%0 1 2 3 4 5 6 7 8 9
+
+%{M%}:m %{bI%}:i %{P%}:p %{bA%}:a %{bN%}:n %{bnI%}:i
+
+% 
+%'
+%>:0 ;
+
+
+Sets
+
+
+Cons =  A B C D F G H J K L M N Ñ P Q R S T V W X Y Z
+        a b c d f g h j k l m n ñ p q r s t v w x y z ;
+
+        
+        
+Voc =   A E I O U Á É Í Ó Ú a e i o u á é í ó ú ;
+        
+        
+        
+VocAcent =  Á É Í Ó Ú á é í ó ú ;      ! para hispanismos: José-mi
+
+
+
+VocNoAcent =  A E I O U a e i o u ;
+
+! NiSuf = y yki n nchis yku nkichis nku
+!        yuq nti sti nka nta npa ;          ! sufijos que toman -ni
+
+
+! sufijos que causan el cambio U > a en otros sufijos
+
+
+
+! Definitions
+
+! NillaSuf = [ lla & NiSuf ] ;
+
+
+
+
+Rules
+
+
+"Alternación del evidencial (1)"
+%{M%}:n <=> :VocNoAcent %>: _ ;
+
+"Alternación del evidencial (2)"
+%{bI%}:0 <=> :VocNoAcent %>: ( :n | :s ) _ ;
+
+
+"Alternación del genitivo (1)"
+%{P%}:q <=> :VocNoAcent %>: _ ;
+
+"Alternación del genitivo (2)"
+%{bA%}:0 <=> :VocNoAcent %>: :q _ ;
+
+
+"Alternación de posesivos y otros sufijos (-ni/-) (1)"
+%{bN%}:0 <=> :VocNoAcent %>: _ ; ! %{bnI%}: ( ( %>: ) :l :l :a ) ( %>: ) [ :y | :n ] ;
+
+"Alternación de posesivos y otros sufijos (-ni/-) (2)"
+%{bnI%}:0 <=> :VocNoAcent %>: %{bN%}: _ ; ! ( ( %>: ) :l :l :a ) ( %>: ) [ :y | :n ] ;

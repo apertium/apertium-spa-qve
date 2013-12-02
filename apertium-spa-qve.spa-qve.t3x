@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- -*- nxml -*- -->
+<!--hhkkkkkkkkkkkkkkkkkh -->
+
+<postchunk>
+  <section-def-cats>
+    <def-cat n="sent">
+       <cat-item name="punt"/>
+    </def-cat>
+  </section-def-cats>
+ 
+  <section-def-attrs>
+      <def-attr n="gen">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="GD"/>
+    </def-attr>
+    
+    <def-attr n="nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+
+  </section-def-attrs>
+  
+  <section-def-vars>
+    <def-var n="paraula"/>
+    <def-var n="prepos"/>
+    <def-var n="POST"/>
+  </section-def-vars>
+  
+  
+  <section-rules>
+    <rule comment="CHUNK:">
+      <pattern>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+  </section-rules>  
+</postchunk>

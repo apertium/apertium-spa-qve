@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- -*- nxml -*- -->
+<!--hhkkkkkkkkkkkkkkkkkh -->
+<interchunk>
+  <section-def-cats>
+   <def-cat n="SN">
+      <cat-item tags="SN"/>
+      <cat-item tags="SN.*"/>
+    </def-cat>
+  </section-def-cats>
+ 
+  <section-def-attrs>
+   
+    <def-attr n="nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+    
+    <def-attr n="gen">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="nt"/>
+      <attr-item tags="GD"/>
+    </def-attr>
+    
+    <def-attr n="cas">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="loc"/>
+      <attr-item tags="ins"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="ben"/>
+      <attr-item tags="ter"/>
+      <attr-item tags="per"/>
+      <attr-item tags="csal"/>
+      <attr-item tags="dis"/>
+      <attr-item tags="incl"/>
+    </def-attr>
+    
+    <def-attr n="pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+      <attr-item tags="p1in"/>
+      <attr-item tags="p1ex"/>
+    </def-attr>
+    
+    <def-attr n="pers_obj">
+      <attr-item tags="po1sg"/>
+      <attr-item tags="po1in"/>
+      <attr-item tags="po1ex"/>
+      <attr-item tags="po1sp"/>
+      <attr-item tags="po2sg"/>
+      <attr-item tags="po2pl"/>
+      <attr-item tags="po2sp"/>
+      <attr-item tags="po3sp"/>
+    </def-attr>
+    
+    <def-attr n="pers_pos">
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px1in"/>
+      <attr-item tags="px1ex"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3sg"/>
+      <attr-item tags="px3pl"/>
+    </def-attr>
+    
+    <def-attr n="a_adv">
+      <attr-item tags="adv"/>
+      <attr-item tags="adv.itg"/>
+      <attr-item tags="rel.adv"/> <!-- sin subst, temp - sólo lo de espanol -->
+    </def-attr>
+    
+    <def-attr n="a_adv-q">
+      <attr-item tags="adv.itg"/>
+      <attr-item tags="adv.subst"/>
+      <attr-item tags="adv.subst.dem"/>
+      <attr-item tags="adv.temp"/>
+    </def-attr>
+
+  </section-def-attrs>
+  
+  <section-def-vars>
+    <def-var n="number"/>
+    <def-var n="POST"/>
+    <def-var n="prepos"/>
+  </section-def-vars>
+  
+  
+  <section-rules>
+    <rule comment="REGLA: SN">
+	<pattern>
+	  <pattern-item n="SN"/>
+	</pattern>
+	<action>
+	    
+	    <out>
+	      
+	      <chunk>
+		<clip pos="1" part="whole"/>
+	      </chunk>
+	    </out>
+	    
+	</action>
+    </rule>
+  </section-rules>  
+  
+</interchunk>
