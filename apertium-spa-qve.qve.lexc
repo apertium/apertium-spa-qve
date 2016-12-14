@@ -1440,7 +1440,7 @@ LEXICON PronombresPersonales-Nuqa
 !!      L E X I C O N E S   D E   R A Í C E S  /  T E M A S        !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON Nombres		<section id = "Nombres" type = "standard">
+LEXICON Nombres	 !	<section id = "Nombres" type = "standard">
 	lachiwa:lachiwa N ;  ! abeja	
 	lachiwana:lachiwana N ;  ! abeja	
 	sankha:sankha N ;  ! abismo	
@@ -3155,7 +3155,7 @@ LEXICON Nombres		<section id = "Nombres" type = "standard">
 	wanwa:wanwa N ;  ! zancudo	
 	sapallu:sapallu N ;  ! zapallo	
 	atuq:atuq N ;  ! zorro	
-LEXICON NombresGeneroM		<section id = "NombresGeneroM" type = "standard">
+LEXICON NombresGeneroM	 !	<section id = "NombresGeneroM" type = "standard">
 	machula:machula N-M ;  ! abuelo	
 	machula:machula N-M ;  ! abuelo	
 	maqt%'a:maqt%'a N-M ;  ! adolescente	
@@ -3214,7 +3214,7 @@ LEXICON NombresGeneroM		<section id = "NombresGeneroM" type = "standard">
 	qachun:qachun N-M ;  ! yerno	
 	qatay:qatay N-M ;  ! yerno	
 	tullka:tullka N-M ;  ! yerno	
-LEXICON NombresGeneroF		<section id = "NombresGeneroF" type = "standard">
+LEXICON NombresGeneroF	 !	<section id = "NombresGeneroF" type = "standard">
 	apucha:apucha N-F ;  ! abuelo	
 	hatucha:hatucha N-F ;  ! abuelo	
 	paya:paya N-F ;  ! abuelo	
@@ -3260,7 +3260,7 @@ LEXICON NombresGeneroF		<section id = "NombresGeneroF" type = "standard">
 	paya:paya N-F ;  ! viejo	
 	mamacha:mamacha N-F ;  ! Virgen	
 	qachun:qachun N-F ;  ! yerna	
-LEXICON NombresHisp		<section id = "NombresHisp" type = "standard">
+LEXICON NombresHisp	 !	<section id = "NombresHisp" type = "standard">
 	alcalde:alcalde N ;  ! alcalde	
 	birrete:birrete N ;  ! birrete	
 	carnaval:carnaval N ;  ! carnaval	
@@ -3285,7 +3285,7 @@ LEXICON NombresHisp		<section id = "NombresHisp" type = "standard">
 	nación:nashun N ;  ! 	
 	política:politica N ;  ! 	
 	política:politika N ;  ! 	
-LEXICON NombresDerivados		<section id = "NombresDerivados" type = "standard">
+LEXICON NombresDerivados	 !	<section id = "NombresDerivados" type = "standard">
 	qilqaq:qilqaq N ;  ! escritor	
 	tukukuy:tukukuy N ;  ! fin	
 	rimaq:rimaq N ;  ! hablante	
@@ -3298,7 +3298,7 @@ LEXICON NombresDerivados		<section id = "NombresDerivados" type = "standard">
 	uyarikuy:uyarikuy N ;  ! sonido	
 	qhawana:qhawana N ;  ! ventana	
 	kawsay:kawsay N ;  ! vida	
-LEXICON NombresPropios		<section id = "NombresPropios" type = "standard">
+LEXICON NombresPropios	 !	<section id = "NombresPropios" type = "standard">
 	Aaron:Aaron NP-ANT-M ;  ! Aaron	
 	Abadon:Abadon NP-ANT-M ;  ! Abadón	
 	Abeja:Abeja NP-ANT-F ;  ! Abeja	
@@ -3619,7 +3619,7 @@ LEXICON NombresPropios		<section id = "NombresPropios" type = "standard">
 	Rosa:Rusa NP-ANT-F ;  ! 	
 	José:Husiy NP-ANT-M ;  ! 	
 	Pato:Patu NP-ANT-M ;  ! 	
-LEXICON NombresPropOtros		<section id = "NombresPropOtros" type = "standard">
+LEXICON NombresPropOtros	 !	<section id = "NombresPropOtros" type = "standard">
 	Academia% Mayor% De% La% Lengua% Quechua:Academia% Mayor% De% La% Lengua% Quechua NP-AL ;  ! Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua	
 	Qhiswa% Simi% Hamut%'Ana% Kuraq% Suntur:Qhiswa% Simi% Hamut%'Ana% Kurak% Suntur NP-AL ;  ! Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua	
 	Qhiswa% Simi% Hamut%'Ana% Kuraq% Suntur:Qhiswa% Simi% Hamut%'Ana% Kuraq% Suntur NP-AL ;  ! Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua	
@@ -3634,7 +3634,7 @@ LEXICON NombresPropOtros		<section id = "NombresPropOtros" type = "standard">
 	Sil:Sil%- NP-AL ;  ! SIL	
 	Sil:Sil NP-AL ;  ! SIL	
 	Sil% International:Sil% International NP-AL ;  ! SIL<b/>International	
-LEXICON Topónimos		<section id = "Topónimos" type = "standard">
+LEXICON Topónimos	 !	<section id = "Topónimos" type = "standard">
 	Abancay:Abancay NP-TOP ;  ! Abancay	
 	Abancay:Abancay NP-TOP ;  ! Abancay	
 	Abancay:Abancay NP-TOP ;  ! Abancay	
@@ -3772,7 +3772,7 @@ LEXICON Topónimos		<section id = "Topónimos" type = "standard">
 	Corralpata:Corralpata NP-TOP ;  ! Corralpata	
 	Cos:Cos NP-TOP ;  ! Cos	
 	Costa% Rica:Costa% Rica NP-TOP ;  ! Costa<b/>Rica	
-	Cota Huarcay:Cota Huarcay NP-TOP ;  ! Cota Huarcay	
+	Cota% Huarcay:Cota% Huarcay NP-TOP ;  ! Cota Huarcay	
 	Cotabambas:Cotabambas NP-TOP ;  ! Cotabambas	
 	Cotarma:Cotarma NP-TOP ;  ! Cotarma	
 	Cotaruse:Cotaruse NP-TOP ;  ! Cotaruse	
@@ -3903,7 +3903,7 @@ LEXICON Topónimos		<section id = "Topónimos" type = "standard">
 	México:México NP-TOP ;  ! Méjico	
 	Mesopotamia:Mesopotamia NP-TOP ;  ! Mesopotamia	
 	México:México NP-TOP ;  ! México	
-	Micaela Bastidas:Micaela Bastidas NP-TOP ;  ! Micaela Bastidas	
+	Micaela% Bastidas:Micaela% Bastidas NP-TOP ;  ! Micaela Bastidas	
 	Misca:Misca NP-TOP ;  ! Misca	
 	Misia:Misia NP-TOP ;  ! Misia	
 	Mitilene:Mitilene NP-TOP ;  ! Mitilene	
@@ -4020,7 +4020,7 @@ LEXICON Topónimos		<section id = "Topónimos" type = "standard">
 	Tamburco:Tamburco NP-TOP ;  ! Tamburco	
 	Tamburu:Tamburu NP-TOP ;  ! Tamburu	
 	Tapayrihua:Tapayrihua NP-TOP ;  ! Tapayrihua	
-	Tasta Pata:Tasta Pata NP-TOP ;  ! Tasta Pata	
+	Tasta% Pata:Tasta% Pata NP-TOP ;  ! Tasta Pata	
 	Tesa:Tesa NP-TOP ;  ! Tesalónica	
 	Tiatira:Tiatira NP-TOP ;  ! Tiatira	
 	Tiberia:Tiberia NP-TOP ;  ! Tiberia	
@@ -4119,7 +4119,7 @@ LEXICON Topónimos		<section id = "Topónimos" type = "standard">
 	Uruguay:Uruway NP-TOP ;  ! 	
 	Uruguay:Uruwayi NP-TOP ;  ! 	
 	Venezuela:Winisuyla NP-TOP ;  ! 	
-LEXICON Adjetivos		<section id = "Adjetivos" type = "standard">
+LEXICON Adjetivos	 !	<section id = "Adjetivos" type = "standard">
 	alqa% wisa:alqa% wisa ADJ ;  ! abigarrado	
 	maqaq:maqaq ADJ ;  ! abusivo	
 	qulqiyuq:qulqiyuq ADJ ;  ! adinerado	
@@ -4264,7 +4264,7 @@ LEXICON Adjetivos		<section id = "Adjetivos" type = "standard">
 	sumaq:sumaq ADJ ;  ! hermoso	
 	qilla:qilla ADJ ;  ! holgazán	
 	llamp%'u% runa:llamp%'u% runa ADJ ;  ! hombre apacible	
-	hank%'u runa:hank%'u runa ADJ ;  ! hombre fuer sudo	
+	hank%'u% runa:hank%'u% runa ADJ ;  ! hombre fuer sudo	
 	phiña% waka:phiña% waka ADJ ;  ! hombre malo	
 	millay% runa:millay% runa ADJ ;  ! hombre malvado	
 	atataw:atataw ADJ ;  ! horrible	
@@ -4411,7 +4411,7 @@ LEXICON Adjetivos		<section id = "Adjetivos" type = "standard">
 	paya:paya ADJ ;  ! vieja	
 	sapa:sapa ADJ ;  ! viudo	
 	kawsaq:kawsaq ADJ ;  ! viviente	
-LEXICON AdjetivosHisp		<section id = "AdjetivosHisp" type = "standard">
+LEXICON AdjetivosHisp	 !	<section id = "AdjetivosHisp" type = "standard">
 	castellano:castellano ADJ ;  ! castellano	
 	kastillanu:kastillanu ADJ ;  ! castellano	
 	español:español ADJ ;  ! español	
@@ -4423,17 +4423,17 @@ LEXICON AdjetivosHisp		<section id = "AdjetivosHisp" type = "standard">
 	nacional:nashunal ADJ ;  ! nacional	
 	tambobambina:tambobambina ADJ-F ;  ! tambobambina	
 	tambobambino:tambobambino ADJ-M ;  ! tambobambino	
-LEXICON AdjetivosGenero		<section id = "AdjetivosGenero" type = "standard">
+LEXICON AdjetivosGenero	 !	<section id = "AdjetivosGenero" type = "standard">
 	sipas:sipas ADJ-F ;  ! joven	
 	wayna:wayna ADJ-M ;  ! joven	
 	qhari:qhari ADJ ;  ! macho	
 	warmi:warmi ADJ ;  ! mujer	
 	paya:paya ADJ-F ;  ! vieja	
 	machu:machu ADJ ;  ! viejo	
-LEXICON AdjetivosDerivados		<section id = "AdjetivosDerivados" type = "standard">
+LEXICON AdjetivosDerivados	 !	<section id = "AdjetivosDerivados" type = "standard">
 	kusisqa:kusisqa ADJ ;  ! alegre	
 	machasqa:machasqa ADJ ;  ! borracho	
-LEXICON Adverbios		<section id = "Adverbios" type = "standard">
+LEXICON Adverbios	 !	<section id = "Adverbios" type = "standard">
 	pakallapi:pakallapi ADV ;  ! a escondidas	
 	aswan% astawan:aswan% astawan ADV ;  ! a<b/>más<b/>no<b/>poder	
 	pasaqlla:pasaqlla ADV ;  ! a<b/>menudo	
@@ -4759,7 +4759,7 @@ LEXICON Adverbios		<section id = "Adverbios" type = "standard">
 	ña:ña ADV ;  ! ya	
 	ñas:ñas ADV ;  ! ya	
 	manaña:manaña ADV ;  ! ya no	
-LEXICON Adverbios-Subst		<section id = "Adverbios-Subst" type = "standard">
+LEXICON Adverbios-Subst	 !	<section id = "Adverbios-Subst" type = "standard">
 	nispa:nispa ADV-Subst ;  ! a si dijo	
 	hawa:hawa ADV-Subst ;  ! afuera	
 	chay:chay ADV-Subst-Dem ;  ! ahí	
@@ -4770,7 +4770,7 @@ LEXICON Adverbios-Subst		<section id = "Adverbios-Subst" type = "standard">
 	saynaqa:saynaqa ADV-Subst ;  ! entonces	
 	karu:karu ADV-Subst ;  ! lejos	
 	karu:kharu ADV-Subst ;  ! lejos	
-LEXICON Adverbios-Temp		<section id = "Adverbios-Temp" type = "standard">
+LEXICON Adverbios-Temp	 !	<section id = "Adverbios-Temp" type = "standard">
 	kunan:kunan ADV-Temp ;  ! actual	
 	kunan:kunan ADV-Temp ;  ! ahora	
 	kunan% pacha:kunan% pacha ADV-Temp ;  ! ahora mismo	
@@ -4809,7 +4809,7 @@ LEXICON Adverbios-Temp		<section id = "Adverbios-Temp" type = "standard">
 	sapa% p%'unchaw:sapa% p%'unchaw ADV-Temp ;  ! todos los días	
 	kinsap%'unchaw:kinsap%'unchaw ADV-Temp ;  ! tres días	
 	huk% p%'unchaw:huk% p%'unchaw ADV-Temp ;  ! un día	
-LEXICON Conjunciones		<section id = "Conjunciones" type = "standard">
+LEXICON Conjunciones	 !	<section id = "Conjunciones" type = "standard">
 	sayna:sayna CONJ-Coord ;  ! a sí	
 	nisqa:nisqa CONJ-Coord ;  ! a si dijo	
 	nisqa:nisqa CONJ-Coord ;  ! a sí había dicho	
@@ -4843,7 +4843,7 @@ LEXICON Conjunciones		<section id = "Conjunciones" type = "standard">
 	i%<cnjcoo%>:y # ;  ! y	
 	i%<cnjcoo%>:y # ;  ! y	
 	ima:ima CONJ-Coord-Final ;  ! y	
-LEXICON Interjeciones		<section id = "Interjeciones" type = "standard">
+LEXICON Interjeciones	 !	<section id = "Interjeciones" type = "standard">
 	ay:ay Interj ;  ! ay	
 	carajo:carajo Interj ;  ! carajo	
 	karahu:karahu Interj ;  ! carajo	
@@ -4861,7 +4861,7 @@ LEXICON Interjeciones		<section id = "Interjeciones" type = "standard">
 	tatáy:tatáy Interj ;  ! papito	
 	taytáy:taytáy Interj ;  ! papito	
 	alaláw:alaláw Interj ;  ! qué<b/>frío	
-LEXICON Det-Cuantitativos		<section id = "Det-Cuantitativos" type = "standard">
+LEXICON Det-Cuantitativos	 !	<section id = "Det-Cuantitativos" type = "standard">
 	waq% chika:waq% chika DET-Cuant ;  ! aquello tanto	
 	llasaq:llasaq DET-Cuant ;  ! bastante	
 	waqnaniraq:waqnaniraq DET-Cuant ;  ! de ese modo	
@@ -4901,7 +4901,7 @@ LEXICON Det-Cuantitativos		<section id = "Det-Cuantitativos" type = "standard">
 	chhika:chhika DET-Cuant ;  ! un<b/>poco<b/>de	
 	chhikan:chhikan DET-Cuant ;  ! un<b/>poco<b/>de	
 	tunpa:tunpa DET-Cuant ;  ! un<b/>poco<b/>de	
-LEXICON Det-Indefinidos		<section id = "Det-Indefinidos" type = "standard">
+LEXICON Det-Indefinidos	 !	<section id = "Det-Indefinidos" type = "standard">
 	hayk%'apas:hayk%'apas DET-Ind ;  ! alguno	
 	imapas:imapas DET-Ind ;  ! alguno	
 	imaynapas:imaynapas DET-Ind ;  ! alguno	
@@ -4939,7 +4939,7 @@ LEXICON Det-Indefinidos		<section id = "Det-Indefinidos" type = "standard">
 	llapa:llapa DET-Ind ;  ! universal	
 	hayk%'apas:hayk%'apas DET-Ind ;  ! uno	
 	wakillan:wakillan DET-Ind ;  ! unos<b/>cuantos	
-LEXICON Det-Interrogativos		<section id = "Det-Interrogativos" type = "standard">
+LEXICON Det-Interrogativos	 !	<section id = "Det-Interrogativos" type = "standard">
 	mayqe:mayqe DET-Itg ;  ! cuál	
 	mayqin:mayqin DET-Itg ;  ! cuál	
 	hayk%'a:hayk%'a DET-Itg ;  ! cuánto	
@@ -4954,12 +4954,12 @@ LEXICON Det-Interrogativos		<section id = "Det-Interrogativos" type = "standard"
 	may:may DET-Itg ;  ! qué	
 	pi:pi DET-Itg ;  ! qué	
 	mayqin:mayqan DET-Itg ;  ! qué (cuál) 	
-LEXICON Det-Hispanos		<section id = "Det-Hispanos" type = "standard">
+LEXICON Det-Hispanos	 !	<section id = "Det-Hispanos" type = "standard">
 	el%<det%>:el # ;  ! el	
 	la%<det%>:la # ;  ! el	
 	las%<det%>:las # ;  ! el	
 	los%<det%>:los # ;  ! el	
-LEXICON Numerales		<section id = "Numerales" type = "standard">
+LEXICON Numerales	 !	<section id = "Numerales" type = "standard">
 	huk:huk NUM ;  ! alguno	
 	huk:huk NUM ;  ! alguno	
 	ch%'usaq:ch%'usaq NUM ;  ! cero	
@@ -5003,7 +5003,7 @@ LEXICON Numerales		<section id = "Numerales" type = "standard">
 	huk:huk NUM ;  ! uno	
 	huk:huq NUM ;  ! uno	
 	huk% huk:huk% huk NUM-Mult ;  ! uno en uno	
-LEXICON Preadjetivos		<section id = "Preadjetivos" type = "standard">
+LEXICON Preadjetivos	 !	<section id = "Preadjetivos" type = "standard">
 	as:as Preadj ;  ! algo	
 	tunpa:tunpa Preadj ;  ! algo	
 	waqlaw:waqlaw Preadj ;  ! aquel lado	
@@ -5050,7 +5050,7 @@ LEXICON Preadjetivos		<section id = "Preadjetivos" type = "standard">
 	may% chhika:may% chika Preadj ;  ! tan	
 	as:as Preadj ;  ! un<b/>poco	
 	wayra:wayra Preadj ;  ! ventarrón	
-LEXICON Postposiciones		<section id = "Postposiciones" type = "standard">
+LEXICON Postposiciones	 !	<section id = "Postposiciones" type = "standard">
 	ch%'isi:ch%'isi Postp ;  ! a noche	
 	uray:uray Postp ;  ! abajo	
 	patan:patan Postp ;  ! al borde de	
@@ -5077,7 +5077,7 @@ LEXICON Postposiciones		<section id = "Postposiciones" type = "standard">
 	kushkanpi:kushkanpi Postp ;  ! junto a	
 	k%'uchu:k%'uchu Postp ;  ! rincón	
 	pata:pata Postp ;  ! sobre	
-LEXICON PronombresOtros		<section id = "PronombresOtros" type = "standard">
+LEXICON PronombresOtros	 !	<section id = "PronombresOtros" type = "standard">
 	pitas:pitas PRON ;  ! a quién	
 	hukaq:hukaq PRON ;  ! alguien	
 	wakilla%<prn%>@p.pospl.opc@:wakilla@p.pospl.opc@ N-FLEX-POS-Oblig ;  ! alguno	
@@ -5181,7 +5181,7 @@ LEXICON PronombresOtros		<section id = "PronombresOtros" type = "standard">
 	nuqa:nuqa PRON ;  ! yo	
 	kikiy:kikiy PRON ;  ! yo mismo	
 	wak:waq PRON ;  ! 	
-LEXICON PronombresDemostrativos		<section id = "PronombresDemostrativos" type = "standard">
+LEXICON PronombresDemostrativos	 !	<section id = "PronombresDemostrativos" type = "standard">
 	haqay:haqay PronDem ;  ! aquel	
 	haqay:haqay PronDem ;  ! aquél	
 	haqay:chaqay PronDem ;  ! aquel, aquello	
@@ -5198,7 +5198,7 @@ LEXICON PronombresDemostrativos		<section id = "PronombresDemostrativos" type = 
 	haqay:anchhaqay PronDem ;  ! este, esto	
 	kay:ankay PronDem ;  ! este, esto	
 	kay:kay PronDem ;  ! esto	
-LEXICON PronombresInterrogativos		<section id = "PronombresInterrogativos" type = "standard">
+LEXICON PronombresInterrogativos	 !	<section id = "PronombresInterrogativos" type = "standard">
 	mayqi:mayqi PRON ;  ! cuál	
 	mayqin:mayqin PronItg ;  ! cuál	
 	pichus:pichus PRON ;  ! cuál	
@@ -5213,14 +5213,14 @@ LEXICON PronombresInterrogativos		<section id = "PronombresInterrogativos" type 
 	pi:pi PronItg ;  ! quién	
 	pin:pin PRON ;  ! quién	
 	pitaq:pitaq PRON ;  ! quién	
-LEXICON PronombresIndefinidos		<section id = "PronombresIndefinidos" type = "standard">
-LEXICON PronombresPersonales		<section id = "PronombresPersonales" type = "standard">
-LEXICON PreposicionesHispanos		<section id = "PreposicionesHispanos" type = "standard">
+!LEXICON PronombresIndefinidos	 !	<section id = "PronombresIndefinidos" type = "standard">
+!LEXICON PronombresPersonales	 !	<section id = "PronombresPersonales" type = "standard">
+LEXICON PreposicionesHispanos	 !	<section id = "PreposicionesHispanos" type = "standard">
 	a%<pr%>:a # ;  ! a	
 	al%<pr%>:al # ;  ! a	
 	de%<pr%>:de # ;  ! de	
 	del%<pr%>:del # ;  ! de	
-LEXICON Verbos		<section id = "Verbos" type = "standard">
+LEXICON Verbos	 !	<section id = "Verbos" type = "standard">
 	saqirpariy:saqirpari V-VERBOS ;  ! abandonar	
 	wikapay:wikapa V-VERBOS ;  ! abandonar	
 	wikch%'uy:wikch%'u V-VERBOS ;  ! abandonar	
