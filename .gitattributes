@@ -18,7 +18,6 @@
 /apertium-spa-qve.spa-qve.t2x -text
 /apertium-spa-qve.spa-qve.t3x -text
 /autogen.sh -text
-/comptodo -text
 /configure.ac -text
 /modes.xml -text
 /spa-qve-supervised.make -text
