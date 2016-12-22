@@ -13,19 +13,19 @@
       <program name="lt-proc -b">
         <file name="qve-spa.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="qve-spa.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-spa-qve.qve-spa.t1x"/>
+        <file name="apertium-qve-spa.qve-spa.t1x"/>
         <file name="qve-spa.t1x.bin"/>
       </program>
       <program name="apertium-interchunk">
-        <file name="apertium-spa-qve.qve-spa.t2x"/>
+        <file name="apertium-qve-spa.qve-spa.t2x"/>
         <file name="qve-spa.t2x.bin"/>
       </program>
       <program name="apertium-postchunk">
-        <file name="apertium-spa-qve.qve-spa.t3x"/>
+        <file name="apertium-qve-spa.qve-spa.t3x"/>
         <file name="qve-spa.t3x.bin"/>
       </program>
       <program name="lt-proc $1">
@@ -50,19 +50,19 @@
       <program name="lt-proc -b">
         <file name="qve-spa.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="qve-spa.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-spa-qve.qve-spa.t1x"/>
+        <file name="apertium-qve-spa.qve-spa.t1x"/>
         <file name="qve-spa.t1x.bin"/>
       </program>
       <program name="apertium-interchunk">
-        <file name="apertium-spa-qve.qve-spa.t2x"/>
+        <file name="apertium-qve-spa.qve-spa.t2x"/>
         <file name="qve-spa.t2x.bin"/>
       </program>
       <program name="apertium-postchunk">
-        <file name="apertium-spa-qve.qve-spa.t3x"/>
+        <file name="apertium-qve-spa.qve-spa.t3x"/>
         <file name="qve-spa.t3x.bin"/>
       </program>
       <program name="lt-proc -d">
@@ -159,7 +159,7 @@
       <program name="lt-proc -b">
         <file name="qve-spa.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="qve-spa.autolex.bin"/>
       </program>
     </pipeline>
@@ -178,7 +178,7 @@
       <program name="lt-proc -b">
         <file name="qve-spa.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="qve-spa.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
@@ -200,7 +200,7 @@
       <program name="lt-proc -b">
         <file name="qve-spa.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="qve-spa.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
@@ -227,19 +227,19 @@
       <program name="lt-proc -b">
         <file name="qve-spa.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="qve-spa.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
-        <file name="apertium-spa-qve.qve-spa.t1x"/>
+        <file name="apertium-qve-spa.qve-spa.t1x"/>
         <file name="qve-spa.t1x.bin"/>
       </program>
       <program name="apertium-interchunk">
-        <file name="apertium-spa-qve.qve-spa.t2x"/>
+        <file name="apertium-qve-spa.qve-spa.t2x"/>
         <file name="qve-spa.t2x.bin"/>
       </program>
       <program name="apertium-postchunk">
-        <file name="apertium-spa-qve.qve-spa.t3x"/>
+        <file name="apertium-qve-spa.qve-spa.t3x"/>
         <file name="qve-spa.t3x.bin"/>
       </program>
     </pipeline>

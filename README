@@ -48,7 +48,7 @@ salida: Ñuqanchis Mikhuyku
 
 Traduciendo de Quechua a Español
 
-  $  echo "yuraq wasiyki" | apertium qve-spa
+  $  echo "yuraq wasiyki" | apertium -d . qve-spa
 salida: Tu casa blanca
 
 
