@@ -21,7 +21,7 @@ TARGETS_COMMON =		\
 	$(PREFIX1).t1x.bin	\
 	$(PREFIX1).t2x.bin	\
 	$(PREFIX1).t3x.bin	\
-	$(PREFIX2).automorf.bin	\
+	$(PREFIX2).automorf.hfst \
 	$(PREFIX2).prob		\
 	$(PREFIX2).rlx.bin	\
 	$(PREFIX2).autobil.bin	\
@@ -66,11 +66,13 @@ $(PREFIX2).autogen.bin: $(AP_SRC1)/$(LANG1).autogen.bin
 	echo " ?* " | hfst-regexp2fst > .deps/any-symbol.hfst
 	hfst-concatenate -1 .deps/$(PREFIX2).autobil.upper -2 .deps/any-symbol.hfst -o .deps/$(PREFIX2).autobil.prefixes
 
-$(PREFIX2).automorf.bin: $(AP_SRC2)/$(LANG2).automorf.att.gz .deps/$(PREFIX2).autobil.prefixes .deps/.d
+$(PREFIX2).automorf.hfst: $(AP_SRC2)/$(LANG2).automorf.att.gz .deps/$(PREFIX2).autobil.prefixes .deps/.d
 	$(ZCAT) $< | hfst-txt2fst > .deps/$(LANG2).automorf.hfst
 	hfst-compose-intersect -1 .deps/$(LANG2).automorf.hfst -2 .deps/$(PREFIX2).autobil.prefixes -o .deps/$(PREFIX2).automorf.trimmed
-	hfst-fst2txt -i .deps/$(PREFIX2).automorf.trimmed -o .deps/$(PREFIX2).automorf.trimmed.att
-	lt-comp lr .deps/$(PREFIX2).automorf.trimmed.att $@
+	hfst-fst2fst -O .deps/$(PREFIX2).automorf.trimmed -o $@
+
+#	hfst-fst2txt -i .deps/$(PREFIX2).automorf.trimmed -o .deps/$(PREFIX2).automorf.trimmed.att
+#	lt-comp lr .deps/$(PREFIX2).automorf.trimmed.att $@
 
 # -------------------
 # qve generation:

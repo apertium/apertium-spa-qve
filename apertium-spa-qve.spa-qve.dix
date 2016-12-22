@@ -2,7 +2,7 @@
 <!-- -*- nxml -*- --> <!--hhh -->
 <!-- -*- nxml -*- --> <!--hhh -->
 <dictionary>
-  <alphabet>  </alphabet>
+  <alphabet></alphabet>
   <sdefs>    
     <sdef n="n"        c="Nombre"/>
     <sdef n="np"       c="Nombre propio"/>
@@ -196,7 +196,8 @@
   </sdefs>
 
   
-<section id = "Nombres" type = "standard">	
+<section id = "main" type = "standard">	
+<!--<section id = "Nombres" type = "standard">	-->
 	<e><p><l>lachiwa<s n="n"/></l><r>abeja<s n="n"/><s n="f"/></r></p></e>
 	<e r="LR"><p><l>lachiwana<s n="n"/></l><r>abeja<s n="n"/><s n="f"/></r></p></e>
 	<e><p><l>sankha<s n="n"/></l><r>abismo<s n="n"/><s n="m"/></r></p></e>
@@ -1905,8 +1906,7 @@
 	<e><p><l>wanwa<s n="n"/></l><r>zancudo<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>sapallu<s n="n"/></l><r>zapallo<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>atuq<s n="n"/></l><r>zorro<s n="n"/></r></p></e>
-</section>	
-<section id = "NombresGeneroM" type = "standard">	
+<!--<section id = "NombresGeneroM" type = "standard">	-->
 	<e><p><l>machula<s n="n"/><s n="m"/></l><r>abuelo<s n="n"/></r></p></e>
 	<e><p><l>machula<s n="n"/><s n="m"/></l><r>abuelo<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>maqt'a<s n="n"/><s n="m"/></l><r>adolescente<s n="n"/><s n="mf"/></r></p></e>
@@ -1965,8 +1965,7 @@
 	<e><p><l>qachun<s n="n"/><s n="m"/></l><r>yerno<s n="n"/></r></p></e>
 	<e><p><l>qatay<s n="n"/><s n="m"/></l><r>yerno<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>tullka<s n="n"/><s n="m"/></l><r>yerno<s n="n"/><s n="m"/></r></p></e>
-</section>	
-<section id = "NombresGeneroF" type = "standard">	
+<!--<section id = "NombresGeneroF" type = "standard">	-->
 	<e><p><l>apucha<s n="n"/><s n="f"/></l><r>abuelo<s n="n"/><s n="f"/></r></p></e>
 	<e><p><l>hatucha<s n="n"/><s n="f"/></l><r>abuelo<s n="n"/><s n="f"/></r></p></e>
 	<e r="RL"><p><l>paya<s n="n"/><s n="f"/></l><r>abuelo<s n="n"/></r></p></e>
@@ -2012,8 +2011,7 @@
 	<e><p><l>paya<s n="n"/><s n="f"/></l><r>viejo<s n="n"/><s n="f"/></r></p></e>
 	<e><p><l>mamacha<s n="n"/><s n="f"/></l><r>Virgen<s n="n"/><s n="f"/></r></p></e>
 	<e><p><l>qachun<s n="n"/><s n="f"/></l><r>yerna<s n="n"/></r></p></e>
-</section>	
-<section id = "NombresHisp" type = "standard">	
+<!--<section id = "NombresHisp" type = "standard">	-->
 	<e><p><l>alcalde<s n="n"/></l><r>alcalde<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>birrete<s n="n"/></l><r>birrete<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>carnaval<s n="n"/></l><r>carnaval<s n="n"/><s n="m"/></r></p></e>
@@ -2031,8 +2029,7 @@
 	<e><p><l>nación<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
 	<e><p><l>nacionalidad<s n="n"/></l><r>nacionalidad<s n="n"/><s n="f"/></r></p></e>
 	<e><p><l>política<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
-</section>	
-<section id = "NombresDerivados" type = "standard">	
+<!--<section id = "NombresDerivados" type = "standard">	-->
 	<e><p><l>qilqaq<s n="n"/></l><r>escritor<s n="n"/></r></p></e>
 	<e><p><l>tukukuy<s n="n"/></l><r>fin<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>rimaq<s n="n"/></l><r>hablante<s n="n"/><s n="mf"/></r></p></e>
@@ -2045,8 +2042,7 @@
 	<e><p><l>uyarikuy<s n="n"/></l><r>sonido<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
 	<e><p><l>kawsay<s n="n"/></l><r>vida<s n="n"/><s n="f"/></r></p></e>
-</section>	
-<section id = "NombresPropios" type = "standard">	
+<!--<section id = "NombresPropios" type = "standard">	-->
 	<e><p><l>Aaron<s n="np"/><s n="ant"/><s n="m"/></l><r>Aaron<s n="np"/>ant<s n="m"/></r></p></e>
 	<e><p><l>Abadon<s n="np"/><s n="ant"/><s n="m"/></l><r>Abadón<s n="np"/>ant<s n="m"/></r></p></e>
 	<e><p><l>Abeja<s n="n"/><s n="f"/></l><r>Abeja<s n="n"/>f</r></p></e>
@@ -2364,8 +2360,7 @@
 	<e><p><l>Zebedeo<s n="np"/><s n="ant"/><s n="m"/></l><r>Zebedeo<s n="np"/>ant<s n="m"/></r></p></e>
 	<e><p><l>Zelote<s n="np"/><s n="ant"/><s n="m"/></l><r>Zelote<s n="np"/>ant<s n="m"/></r></p></e>
 	<e><p><l>Zenas<s n="np"/><s n="ant"/><s n="m"/></l><r>Zenas<s n="np"/>ant<s n="m"/></r></p></e>
-</section>	
-<section id = "NombresPropOtros" type = "standard">	
+<!--<section id = "NombresPropOtros" type = "standard">	-->
 	<e r="LR"><p><l>Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua<s n="np"/><s n="al"/></l><r>Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua<s n="np"/><s n="al"/><s n="f"/></r></p></e>
 	<e><p><l>Qhiswa<b/>Simi<b/>Hamut'ana<b/>Kuraq<b/>Suntur<s n="np"/><s n="al"/></l><r>Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua<s n="np"/><s n="al"/><s n="f"/></r></p></e>
 	<e><p><l>Qhiswa<b/>Simi<b/>Hamut'ana<b/>Kuraq<b/>Suntur<s n="np"/><s n="al"/></l><r>Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua<s n="np"/><s n="al"/><s n="f"/></r></p></e>
@@ -2378,8 +2373,7 @@
 	<e><p><l>SIL<s n="np"/><s n="al"/></l><r>SIL<s n="np"/><s n="al"/><s n="m"/></r></p></e>
 	<e><p><l>SIL<s n="np"/><s n="al"/></l><r>SIL<s n="np"/><s n="al"/><s n="m"/></r></p></e>
 	<e><p><l>SIL<b/>International<s n="np"/><s n="al"/></l><r>SIL<b/>International<s n="np"/><s n="al"/><s n="m"/></r></p></e>
-</section>	
-<section id = "Topónimos" type = "standard">	
+<!--<section id = "Topónimos" type = "standard">	-->
 	<e r="RL"><p><l>Abancay<s n="np"/><s n="top"/><s n="m"/></l><r>Abancay<s n="np"/>top<s n="m"/></r></p></e>
 	<e r="RL"><p><l>Abancay<s n="np"/><s n="top"/><s n="m"/></l><r>Abancay<s n="np"/>top<s n="m"/></r></p></e>
 	<e><p><l>Abancay<s n="np"/><s n="top"/><s n="m"/></l><r>Abancay<s n="np"/>top<s n="m"/></r></p></e>
@@ -2792,8 +2786,8 @@
 	<e><p><l>Yahuinca<s n="np"/><s n="top"/><s n="m"/></l><r>Yahuinca<s n="np"/>top<s n="m"/></r></p></e>
 	<e><p><l>Yanaca<s n="np"/><s n="top"/><s n="m"/></l><r>Yanaca<s n="np"/>top<s n="m"/></r></p></e>
 	<e><p><l>Yauri<s n="np"/><s n="top"/><s n="m"/></l><r>Yauri<s n="np"/>top<s n="m"/></r></p></e>
-</section>	
-<section id = "Adjetivos" type = "standard">	
+
+<!--<section id = "Adjetivos" type = "standard">	-->
 	<e r="RL"><p><l>alqa<b/>wisa<s n="adj"/></l><r>abigarrado<s n="adj"/>mf</r></p></e>
 	<e><p><l>maqaq<s n="adj"/></l><r>abusivo<s n="adj"/></r></p></e>
 	<e><p><l>qulqiyuq<s n="adj"/></l><r>adinerado<s n="adj"/></r></p></e>
@@ -3083,8 +3077,7 @@
 	<e><p><l>paya<s n="adj"/><s n="f"/></l><r>vieja<s n="adj"/>f</r></p></e>
 	<e r="RL"><p><l>sapa<s n="adj"/></l><r>viudo<s n="adj"/></r></p></e>
 	<e><p><l>kawsaq<s n="adj"/></l><r>viviente<s n="adj"/>mf</r></p></e>
-</section>	
-<section id = "AdjetivosHisp" type = "standard">	
+<!--<section id = "AdjetivosHisp" type = "standard">	-->
 	<e r="LR"><p><l>castellano<s n="adj"/></l><r>castellano<s n="adj"/></r></p></e>
 	<e><p><l>kastillanu<s n="adj"/></l><r>castellano<s n="adj"/></r></p></e>
 	<e><p><l>español<s n="adj"/></l><r>español<s n="adj"/></r></p></e>
@@ -3093,16 +3086,14 @@
 	<e><p><l>nacional<s n="adj"/></l><r>nacional<s n="adj"/><s n="mf"/></r></p></e>
 	<e><p><l>tambobambina<s n="adj"/></l><r>tambobambina<s n="adj"/></r></p></e>
 	<e><p><l>tambobambino<s n="adj"/></l><r>tambobambino<s n="adj"/></r></p></e>
-</section>	
-<section id = "AdjetivosGenero" type = "standard">	
+<!--<section id = "AdjetivosGenero" type = "standard">	-->
 	<e><p><l>sipas<s n="adj"/><s n="f"/></l><r>joven<s n="adj"/><s n="mf"/></r></p></e>
 	<e><p><l>wayna<s n="adj"/><s n="m"/></l><r>joven<s n="adj"/><s n="mf"/></r></p></e>
 	<e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
 	<e><p><l>warmi<s n="adj"/></l><r>mujer<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
 	<e><p><l>paya<s n="adj"/></l><r>vieja<s n="adj"/></r></p></e>
 	<e><p><l>machu<s n="adj"/></l><r>viejo<s n="adj"/></r></p></e>
-</section>	
-<section id = "AdjetivosDerivados" type = "standard">	
+<!--<section id = "AdjetivosDerivados" type = "standard">	-->
 	<e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>acuerdo<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>kusisqa<s n="adj"/></l><r>alegre<s n="adj"/><s n="mf"/></r></p></e>
 	<e><p><l>huñuy<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>asociación<s n="n"/><s n="f"/></r></p></e>
@@ -3128,8 +3119,7 @@
 	<e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/></l><r>saber<s n="n"/><s n="m"/></r></p></e>
 	<e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>sabio<s n="adj"/></r></p></e>
 	<e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>sabio<s n="n"/></r></p></e>
-</section>	
-<section id = "Adverbios" type = "standard">	
+<!--<section id = "Adverbios" type = "standard">	-->
 	<e><p><l>pakallapi<s n="adv"/></l><r>a escondidas<s n="adv"/></r></p></e>
 	<e><p><l>aswan<b/>astawan<s n="adv"/></l><r>a<b/>más<b/>no<b/>poder<s n="adv"/></r></p></e>
 	<e><p><l>pasaqlla<s n="adv"/></l><r>a<b/>menudo<s n="adv"/></r></p></e>
@@ -3434,8 +3424,7 @@
 	<e><p><l>ña<s n="adv"/></l><r>ya<s n="adv"/></r></p></e>
 	<e r="LR"><p><l>ñas<s n="adv"/></l><r>ya<s n="adv"/></r></p></e>
 	<e><p><l>manaña<s n="adv"/></l><r>ya no<s n="adv"/></r></p></e>
-</section>	
-<section id = "Adverbios-Subst" type = "standard">	
+<!--<section id = "Adverbios-Subst" type = "standard">	-->
 	<e><p><l>nispa<s n="adv"/></l><r>a si dijo<s n="adv"/> </r></p></e>
 	<e><p><l>hawa<s n="adv"/><s n="subst"/></l><r>afuera<s n="adv"/></r></p></e>
 	<e><p><l>chay<s n="adv"/><s n="subst"/><s n="dem"/></l><r>ahí<s n="adv"/></r></p></e>
@@ -3445,8 +3434,7 @@
 	<e><p><l>kay<s n="adv"/><s n="subst"/><s n="dem"/><s n="lim"/></l><r>cerca<s n="adv"/></r></p></e>
 	<e><p><l>saynaqa<s n="cnjadv"/></l><r>entonces<s n="cnjadv"/></r></p></e>
 	<e><p><l>karu<s n="adv"/><s n="subst"/></l><r>lejos<s n="adv"/></r></p></e>
-</section>	
-<section id = "Adverbios-Temp" type = "standard">	
+<!--<section id = "Adverbios-Temp" type = "standard">	-->
 	<e r="RL"><p><l>kunan<s n="adv"/></l><r>actual<s n="adv"/></r></p></e>
 	<e><p><l>kunan<s n="adv"/><s n="temp"/></l><r>ahora<s n="adv"/></r></p></e>
 	<e><p><l>kunan<b/>pacha<s n="adv"/><s n="temp"/></l><r>ahora mismo<s n="adv"/> </r></p></e>
@@ -3485,8 +3473,7 @@
 	<e><p><l>sapa<b/>p'unchaw<s n="adv"/></l><r>todos los días<s n="adv"/></r></p></e>
 	<e><p><l>kinsap'unchaw<s n="adv"/></l><r>tres días<s n="adv"/></r></p></e>
 	<e><p><l>huk<b/>p'unchaw<s n="adv"/><s n="temp"/></l><r>un día<s n="adv"/></r></p></e>
-</section>	
-<section id = "Conjunciones" type = "standard">	
+<!--<section id = "Conjunciones" type = "standard">	-->
 	<e><p><l>sayna<s n="cnjcoo"/></l><r>a sí<s n="cnjcoo"/> </r></p></e>
 	<e><p><l>nisqa<s n="cnjcoo"/></l><r>a si dijo<s n="cnjcoo"/> </r></p></e>
 	<e><p><l>nisqa<s n="cnjcoo"/></l><r>a sí había dicho<s n="cnjcoo"/> </r></p></e>
@@ -3519,8 +3506,7 @@
 	<e><p><l>utaq<s n="cnjadv"/></l><r>si no<s n="cnjadv"/> </r></p></e>
 	<e><p><l>i<s n="cnjcoo"/></l><r>y<s n="cnjcoo"/></r></p></e>
 	<e><p><l>ima<s n="cnjcoo"/></l><r>y<s n="cnjcoo"/></r></p></e>
-</section>	
-<section id = "Interjeciones" type = "standard">	
+<!--<section id = "Interjeciones" type = "standard">	-->
 	<e><p><l>ay<s n="ij"/></l><r>ay<s n="ij"/></r></p></e>
 	<e><p><l>carajo<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
 	<e><p><l>karahu<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
@@ -3538,8 +3524,7 @@
 	<e r="LR"><p><l>tatáy<s n="ij"/></l><r>papito<s n="ij"/></r></p></e>
 	<e><p><l>taytáy<s n="ij"/></l><r>papito<s n="ij"/></r></p></e>
 	<e><p><l>alaláw<s n="ij"/></l><r>qué<b/>frío<s n="ij"/></r></p></e>
-</section>	
-<section id = "Det-Cuantitativos" type = "standard">	
+<!--<section id = "Det-Cuantitativos" type = "standard">	-->
 	<e><p><l>waq<b/>chika<s n="det"/><s n="qnt"/></l><r>aquello tanto<s n="det"/>qnt</r></p></e>
 	<e><p><l>llasaq<s n="det"/><s n="qnt"/></l><r>bastante<s n="det"/><s n="qnt"/><s n="mf"/></r></p></e>
 	<e><p><l>waqnaniraq<s n="det"/><s n="qnt"/></l><r>de ese modo<s n="det"/>qnt</r></p></e>
@@ -3569,8 +3554,7 @@
 	<e r="LR"><p><l>chhika<s n="det"/><s n="qnt"/></l><r>un<b/>poco<b/>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 	<e r="LR"><p><l>chhikan<s n="det"/><s n="qnt"/></l><r>un<b/>poco<b/>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 	<e r="LR"><p><l>tunpa<s n="det"/><s n="qnt"/></l><r>un<b/>poco<b/>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
-</section>	
-<section id = "Det-Indefinidos" type = "standard">	
+<!--<section id = "Det-Indefinidos" type = "standard">	-->
 	<e><p><l>hayk'apas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
 	<e><p><l>imapas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
 	<e r="LR"><p><l>imaynapas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
@@ -3615,8 +3599,7 @@
 	<e r="RL"><p><l>wakillan<s n="det"/><s n="ind"/></l><r>unos<b/>cuantos<s n="det"/><s n="qnt"/><s n="f"/><s n="pl"/></r></p></e>
 	<e r="RL"><p><l>wakillan<s n="det"/><s n="ind"/></l><r>unos<b/>pocos<s n="det"/><s n="qnt"/><s n="f"/><s n="pl"/></r></p></e>
 	<e r="RL"><p><l>wakillan<s n="det"/><s n="ind"/></l><r>unos<b/>pocos<s n="det"/><s n="qnt"/><s n="m"/><s n="pl"/></r></p></e>
-</section>	
-<section id = "Det-Interrogativos" type = "standard">	
+<!--<section id = "Det-Interrogativos" type = "standard">	-->
 	<e><p><l>haqay<s n="det"/><s n="dem"/></l><r>aquel<s n="det"/><s n="dem"/></r></p></e>
 	<e><p><l>mayqe<s n="det"/><s n="itg"/></l><r>cuál<s n="det"/>itg<s n="mf"/></r></p></e>
 	<e><p><l>mayqin<s n="det"/><s n="itg"/></l><r>cuál<s n="det"/><s n="itg"/><s n="mf"/></r></p></e>
@@ -3637,14 +3620,12 @@
 	<e r="LR"><p><l>imayna<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 	<e><p><l>may<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 	<e r="LR"><p><l>pi<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-</section>	
-<section id = "Det-Hispanos" type = "standard">	
+<!--<section id = "Det-Hispanos" type = "standard">	-->
 	<e><p><l>el<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
 	<e><p><l>la<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
 	<e><p><l>las<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="pl"/></r></p></e>
 	<e><p><l>los<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="pl"/></r></p></e>
-</section>	
-<section id = "Numerales" type = "standard">	
+<!--<section id = "Numerales" type = "standard">	-->
 	<e r="RL"><p><l>huk<s n="num"/></l><r>alguno<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
 	<e r="RL"><p><l>huk<s n="num"/></l><r>alguno<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
 	<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
@@ -3725,8 +3706,7 @@
 	<e><p><l>huk<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
 	<e r="RL"><p><l>huk<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e>
 	<e><p><l>huk<b/>huk<s n="numM"/></l><r>uno en uno<s n="num"/></r></p></e>
-</section>	
-<section id = "Preadjetivos" type = "standard">	
+<!--<section id = "Preadjetivos" type = "standard">	-->
 	<e><p><l>as<s n="preadj"/></l><r>algo<s n="preadv"/></r></p></e>
 	<e r="LR"><p><l>tunpa<s n="preadj"/></l><r>algo<s n="preadv"/></r></p></e>
 	<e><p><l>waqlaw<s n="preadj"/></l><r>aquel lado<s n="preadv"/></r></p></e>
@@ -3766,8 +3746,7 @@
 	<e r="RL"><p><l>sinchi<s n="preadj"/></l><r>tan<s n="preadv"/></r></p></e>
 	<e><p><l>as<s n="preadj"/></l><r>un<b/>poco<s n="preadv"/></r></p></e>
 	<e><p><l>wayra<s n="preadj"/></l><r>ventarrón<s n="preadv"/></r></p></e>
-</section>	
-<section id = "Postposiciones" type = "standard">	
+<!--<section id = "Postposiciones" type = "standard">	-->
 	<e><p><l>ch'isi<s n="post"/></l><r>a noche<s n="pr"/> </r></p></e>
 	<e><p><l>uray<s n="post"/></l><r>abajo<s n="pr"/></r></p></e>
 	<e><p><l>patan<s n="post"/></l><r>al borde de<s n="pr"/></r></p></e>
@@ -3794,8 +3773,7 @@
 	<e><p><l>kushkanpi<s n="post"/></l><r>junto a<s n="pr"/></r></p></e>
 	<e r="LR"><p><l>k'uchu<s n="post"/></l><r>rincón<s n="pr"/></r></p></e>
 	<e><p><l>pata<s n="post"/></l><r>sobre<s n="pr"/></r></p></e>
-</section>	
-<section id = "PronombresOtros" type = "standard">	
+<!--<section id = "PronombresOtros" type = "standard">	-->
 	<e><p><l>pitas<s n="prn"/></l><r>a quién<s n="prn"/> </r></p></e>
 	<e><p><l>hukaq<s n="prn"/></l><r>alguien<s n="prn"/>tn</r></p></e>
 	<e><p><l>wakilla<s n="prn"/></l><r>alguno<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
@@ -3886,8 +3864,7 @@
 	<e><p><l>hukaqnin<s n="prn"/></l><r>uno de los dos<s n="prn"/></r></p></e>
 	<e><p><l>nuqa<s n="prn"/></l><r>yo<s n="prn"/>tn<s n="p1"/></r></p></e>
 	<e r="RL"><p><l>kikiy<s n="prn"/></l><r>yo mismo<s n="prn"/></r></p></e>
-</section>	
-<section id = "PronombresDemostrativos" type = "standard">	
+<!--<section id = "PronombresDemostrativos" type = "standard">	-->
 	<e><p><l>haqay<s n="prn"/><s n="dem"/></l><r>aquel<s n="prn"/><s n="tn"/></r></p></e>
 	<e r="RL"><p><l>haqay<s n="prn"/><s n="dem"/></l><r>aquél<s n="prn"/><s n="tn"/></r></p></e>
 	<e r="RL"><p><l>haqay<s n="prn"/><s n="dem"/></l><r>aquello<s n="prn"/><s n="tn"/></r></p></e>
@@ -3898,8 +3875,7 @@
 	<e><p><l>kay<s n="prn"/><s n="dem"/></l><r>este<s n="prn"/><s n="tn"/></r></p></e>
 	<e r="RL"><p><l>kay<s n="prn"/><s n="dem"/></l><r>éste<s n="prn"/><s n="tn"/></r></p></e>
 	<e r="RL"><p><l>kay<s n="prn"/><s n="dem"/></l><r>esto<s n="prn"/><s n="tn"/></r></p></e>
-</section>	
-<section id = "PronombresInterrogativos" type = "standard">	
+<!--<section id = "PronombresInterrogativos" type = "standard">	-->
 	<e><p><l>mayqi<s n="prn"/><s n="itg"/></l><r>cuál<s n="prn"/>itg</r></p></e>
 	<e><p><l>mayqin<s n="prn"/><s n="itg"/></l><r>cuál<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
 	<e><p><l>pichus<s n="prn"/><s n="itg"/></l><r>cuál<s n="prn"/>itg</r></p></e>
@@ -3918,8 +3894,7 @@
 	<e><p><l>pi<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
 	<e><p><l>pin<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/>itg</r></p></e>
 	<e><p><l>pitaq<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/>itg</r></p></e>
-</section>	
-<section id = "PronombresIndefinidos" type = "standard">	
+<!--<section id = "PronombresIndefinidos" type = "standard">	-->
 	<e><p><l>imapas<s n="prn"/><s n="ind"/></l><r>algo<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 	<e><p><l>pipas<s n="prn"/><s n="ind"/></l><r>alguien<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 	<e><p><l>hayk'apas<s n="prn"/><s n="ind"/></l><r>alguno<s n="prn"/><s n="tn"/></r></p></e>
@@ -3928,8 +3903,7 @@
 	<e r="RL"><p><l>hayk'apas<s n="prn"/><s n="ind"/></l><r>unos<b/>cuantos<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 	<e r="RL"><p><l>hayk'apas<s n="prn"/><s n="ind"/></l><r>unos<b/>cuantos<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
 	<e r="LR"><p><l>hayk'apas<s n="prn"/><s n="ind"/></l><r>unos<b/>cuantos<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
-</section>	
-<section id = "PronombresPersonales" type = "standard">	
+<!--<section id = "PronombresPersonales" type = "standard">	-->
 	<e r="RL"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/></l><r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/></r></p></e>
 	<e r="LR"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
 	<e r="LR"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/></l><r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/></r></p></e>
@@ -3970,14 +3944,12 @@
 	<e r="LR"><p><l>nuqay<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 	<e><p><l>ñuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 	<e r="LR"><p><l>ñuqay<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-</section>	
-<section id = "PreposicionesHispanos" type = "standard">	
+<!--<section id = "PreposicionesHispanos" type = "standard">	-->
 	<e><p><l>a<s n="pr"/></l><r>a<s n="pr"/></r></p></e>
 	<e><p><l>al<s n="pr"/></l><r>a<s n="pr"/><j/>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
 	<e><p><l>de<s n="pr"/></l><r>de<s n="pr"/></r></p></e>
 	<e><p><l>del<s n="pr"/></l><r>de<s n="pr"/><j/>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
-</section>	
-<section id = "Verbos" type = "standard">	
+<!--<section id = "Verbos" type = "standard">	-->
 	<e><p><l>saqirpariy<s n="vblex"/></l><r>abandonar<s n="vblex"/></r></p></e>
 	<e r="RL"><p><l>wikapay<s n="vblex"/></l><r>abandonar<s n="vblex"/></r></p></e>
 	<e><p><l>wikch'uy<s n="vblex"/></l><r>abandonar<s n="vblex"/></r></p></e>
@@ -6072,10 +6044,9 @@
 	<e><p><l>aqtuy<s n="vblex"/></l><r>vomitar<s n="vblex"/></r></p></e>
 	<e r="RL"><p><l>kutichiy<s n="vblex"/></l><r>vomitar<s n="vblex"/></r></p></e>
 	<e r="RL"><p><l>maqch'iy<s n="vblex"/></l><r>zambullir<s n="vblex"/></r></p></e>
-</section>	
   
   
-<section id="PUNTUACION__etc" type="standard">
+<!--<section id="PUNTUACION__etc" type="standard">-->
 
     <e c=""><p><l>(<s n="lpar"/></l><r>(<s n="lpar"/></r></p></e>
     <e c=""><p><l>[<s n="lpar"/></l><r>[<s n="lpar"/></r></p></e>
@@ -6091,8 +6062,8 @@
     <e c=""><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
     <e c=""><re>[.\?¿;:!¡"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
 
-<e><re>[0-9]+([.,][0-9]+)*[.,]*[ ]*%?</re><p><l><s n="num"/></l><r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
-<e><re>[MCDXLVI]+</re><p><l><s n="num"/></l><r><s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e><re>[0-9]+([.,][0-9]+)*[.,]*[ ]*%?</re><p><l><s n="num"/></l><r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e><re>[MCDXLVI]+</re><p><l><s n="num"/></l><r><s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
 
 
 </section>
