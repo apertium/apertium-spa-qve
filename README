@@ -23,9 +23,9 @@ Previamente requiere los siguientes software especializado
 * HFST3
   
 Para ver los detalles de instalación se puede ver en:
-http://wiki.apertium.org/wiki/Installation
-http://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
-http://wiki.apertium.org/wiki/Hfst
+https://wiki.apertium.org/wiki/Installation
+https://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
+https://wiki.apertium.org/wiki/Hfst
 
 
 
@@ -56,11 +56,11 @@ Soporte
 ===============================================================================
 
 Más información acerca del sistema de traductores automáticos basado en Apertium
-se puede ver en en Wiki: http://wiki.apertium.org
+se puede ver en en Wiki: https://wiki.apertium.org
 
 o consultar en a la comunidad:
 
 * Mailing list: apertium-stuff@lists.sourceforge.net
-* IRC: #apertium on irc.freenode.net
+* IRC: #apertium on irc.oftc.net
 
 ver tambien el archivo de AUTHORS incluído en esta distribución para consultar acerca de este par de lenguas.
