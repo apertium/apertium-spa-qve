@@ -1,0 +1,8 @@
+[8PSH94Lxgnvt#0] ^Adv<ADV>{^allí<adv>$}$
+[/8PSH94Lxgnvt]
+[OXPgIukyIPkh#0] ^default<default>{^-<guio>$}$
+[/OXPgIukyIPkh]
+[Y8a9u8EmZCSI#0] ^Snprop<SNprop><sg>{^Faraon<np><3>$}$
+[/Y8a9u8EmZCSI]
+[is56WjTn8ppV#0] ^Verbo-Inf<SV-inf><vblex><inf><po2sg><enf>{^contratar<vblex><3>$}$
+[/is56WjTn8ppV]

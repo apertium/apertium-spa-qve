@@ -1,0 +1,12 @@
+[0DUCxD10owuT#0] ^default<default>{^,<cm>$}$
+[/0DUCxD10owuT]
+[Muuxq8wcYBzr#0] ^default<default>{^(<lpar>$}$
+[/Muuxq8wcYBzr]
+[u3IIvJtdfATx#0] ^default<default>{^!<sent>$}$
+[/u3IIvJtdfATx]
+[wDEV_Jm0Trfl#0] ^unknown<unknown>{^*Franoonu$}$
+[/wDEV_Jm0Trfl]
+[xDt5NrTsFMoz#0] ^unknown<unknown>{^*élrueásmosc$}$
+[/xDt5NrTsFMoz]
+[zbTuKuppzGqD#0] ^default<default>{^.<sent>$}$
+[/zbTuKuppzGqD]

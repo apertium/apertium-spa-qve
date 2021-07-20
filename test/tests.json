@@ -1,0 +1,10 @@
+{
+    "qve-spa": {
+        "input": "qve-spa-input.txt",
+        "mode": "qve-spa"
+    },
+    "spa-qve": {
+        "input": "spa-qve-input.txt",
+        "mode": "spa-qve"
+    }
+}
